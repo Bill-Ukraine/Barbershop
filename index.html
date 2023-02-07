@@ -4,83 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Barbershop</title>
   </head>
   <body>
-
     <!-- Шапка -->
 
-
-    <header>
+    <header class="header">
       <nav>
-        <a href="./index.html"
+        <a class="header-link" href="./index.html"
           ><img src="./images/Logo.svg" alt="Логотип барбершопу"
         /></a>
         <ul>
-          <li><a href=""></a>Про нас</li>
-          <li><a href=""></a>Послуги і ціни</li>
-          <li><a href=""></a>Майстри</li>
-          <li><a href=""></a>Контакти</li>
+          <li><a class="header-link" href="">Про нас</a></li>
+          <li><a class="header-link" href="">Послуги і ціни</a></li>
+          <li><a class="header-link" href="">Майстри</a></li>
+          <li><a class="header-link" href="">Контакти</a></li>
         </ul>
       </nav>
       <address>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
+        <a class="address-link" href="tel:+380441111111">+38 044 111 11 11</a>
       </address>
-      <button type="button">Онлайн-запис</button>
+      <button class="header-button" type="button">Онлайн-запис</button>
     </header>
     <main>
-
       <!-- Секція 1 -->
-      <section>
+      <section class="section-hero">
         <ul>
           <li>
-            <a
+            <a class="social-network"
               href="https://www.instagram.com
                     "
               >Instagram</a
             >
           </li>
-          <li><a href="https://www.youtube.com">Youtube</a></li>
+          <li><a class="social-network" href="https://www.youtube.com">Youtube</a></li>
         </ul>
-        <p>Чоловіча перукарня в Києві</p>
-        <h1>BarberShop</h1>
-        <p>
+        <p class="hero-pretext">Чоловіча перукарня в Києві</p>
+        <h1 class="hero-title">BarberShop</h1>
+        <p class="hero-text">
           Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно та
           зі смаком.
         </p>
         <ul>
-          <li><button type="button">Назад</button></li>
-          <li><button type="button">Вперед</button></li>
+          <li><button class="hero-slider" type="button">Назад</button></li>
+          <li><button class="hero-slider" type="button">Вперед</button></li>
         </ul>
       </section>
 
       <!-- Секція 2 -->
 
-
       <section>
         <img src="./images/beard.jpg" alt="Гоління бороди" />
         <img src="./images/haircut.jpg" alt="Зачіска" />
-        <h2>Про нас</h2>
-        <p>Кращий Барбершоп твого міста</p>
-        <p>
+        <h2 class="about-title">Про нас</h2>
+        <p class="about-text">Кращий Барбершоп твого міста</p>
+        <p class="about-hero-text">
           Якщо ти дійсно хочеш додати у свій образ більше впевненості, тобі
           точно до нас.
         </p>
-        <p>
+        <p class="about-tagline">
           Ми команда, яка ніколи не зупиняється на досягнутому і прагне змін. І
           коли ти потрапиш до рук нашого майстра, то вже ніколи не зможеш бути
           тим самим, ми впевнені. Ми команда, яка завжди з клієнтами "на одній
           хвилі". Тому ми завжди готові вдосконалити кожного, хто до нас
           приходить! Чекаємо на тебе!
         </p>
-        <button type="button">онлайн-запис</button>
+        <button class="about-button" type="button">онлайн-запис</button>
       </section>
 
       <!-- Секція 3 -->
 
-
       <section>
-        <p>Проведи час у компанії кращих майстрів</p>
+        <p class="prices-text">Проведи час у компанії кращих майстрів</p>
         <h2>Послуги і ціни</h2>
         <table>
           <tr>
@@ -118,7 +120,7 @@
             <td>від 200 грн.</td>
           </tr>
         </table>
-        <button type="button">онлайн-запис</button>
+        <button class="prices-button" type="button">онлайн-запис</button>
       </section>
 
       <!-- Секція 4 -->
@@ -163,7 +165,7 @@
             <ul>
               <li>
                 <a href="">
-                  <img src="./images/instagram.svg" alt="Інстаграм" />
+                  <img src="images/instagram.svg" alt="Інстаграм" />
                 </a>
               </li>
               <li>
@@ -243,10 +245,14 @@
         <p>Латинською мовою "барба" означає "борода"</p>
         <h2>Робочі процеси</h2>
         <ul>
-          <li><img src="./images/cutting-process.jpg" alt="Процес стрижки"></li>
-          <li><img src="images/shaving-process.jpg" alt="Процес гоління"></li>
-          <li><img src="./images/drying-process.jpg" alt="Процес сушки"></li>
-          <li><img src="./images/neck-shaving.jpg" alt="Процес гоління шиї"></li>
+          <li>
+            <img src="./images/cutting-process.jpg" alt="Процес стрижки" />
+          </li>
+          <li><img src="images/shaving-process.jpg" alt="Процес гоління" /></li>
+          <li><img src="./images/drying-process.jpg" alt="Процес сушки" /></li>
+          <li>
+            <img src="./images/neck-shaving.jpg" alt="Процес гоління шиї" />
+          </li>
         </ul>
       </section>
 
@@ -255,16 +261,25 @@
       <section>
         <section>
           <h2>Онлайн-запис</h2>
-        <button type="button">Відправити</button>
+          <form action="">
+            Ім’я*
+            <input type="text" name="firstname" />
+            Телефон*
+            <input type="tel" /><br />
+            Повідомлення<br />
+            <input type="text" /><br />
+            <input type="submit" value="Відправити" />
+          </form>
         </section>
         <section>
           <h2>Контакти</h2>
           <address>
             <ul>
-              <li><p>ул. Васильківська, 7А
-                Київ, 08132</p></li>
+              <li><p>ул. Васильківська, 7А Київ, 08132</p></li>
               <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-              <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+              <li>
+                <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+              </li>
             </ul>
           </address>
           <p>Графік роботи</p>
@@ -276,13 +291,13 @@
       <p>&COPY;Copyright 2023</p>
       <ul>
         <li>
-          <a
+          <a class="social-network"
             href="https://www.instagram.com
                   "
             >Instagram</a
           >
         </li>
-        <li><a href="https://www.youtube.com">Youtube</a></li>
+        <li><a class="social-network" href="https://www.youtube.com">Youtube</a></li>
       </ul>
     </footer>
   </body>

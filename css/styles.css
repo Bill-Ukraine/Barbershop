@@ -1,0 +1,182 @@
+:root {
+  --color-first: #303030;
+  --color-second: #9da4bd;
+  --color-third: rgba(157, 164, 189, 0.6);
+  --color-fourth: #ffffff;
+  --color-fifth: #ff6c00;
+  --color-sixth: #555555;
+  --color-seventh: #f7f7f7;
+  --color-eighth: rgba(157, 164, 189, 0.4);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-first);
+  background-color: var(--color-fourth);
+}
+li {
+  list-style-type: none;
+}
+
+/* Header */
+
+.header {
+  background-color: var(--color-seventh);
+}
+
+.header-link,
+.address-link {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: var(--color-fourth);
+}
+
+.header-link:hover,
+.address-link:hover,
+.header-link:focus,
+.address-link:focus {
+  color: var(--color-fifth);
+}
+
+.header-button,
+.prices-button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-fifth);
+  border-radius: 25px;
+  cursor: pointer;
+  color: var(--color-fourth);
+  background: none;
+}
+
+.header-button:hover,
+.header-button:focus,
+.prices-button:hover,
+.prices-button:focus {
+  background-color: var(--color-fifth);
+}
+
+/* Section Hero */
+
+.section-hero {
+  background-color: var(--color-seventh);
+}
+
+.social-network {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  color: var(--color-first);
+}
+
+.social-network:hover,
+.social-network:focus {
+  color: var(--color-fifth);
+}
+
+.hero-pretext {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-third);
+}
+
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--color-fourth);
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: var(--color-second);
+}
+
+.hero-slider {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: right;
+  letter-spacing: 0.1em;
+  color: var(--color-fourth);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Section 2 */
+
+.about-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.about-hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: var(--color-sixth);
+}
+
+.about-tagline {
+  font-size: 14px;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+  color: var(--color-sixth);
+}
+
+.about-button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-fifth);
+  border-radius: 25px;
+  background: none;
+  cursor: pointer;
+}
+
+.about-button:hover,
+.about-button:focus {
+  background-color: var(--color-fifth);
+}
+
+/*Section Prices */
+
+.prices-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-seventh);
+}
