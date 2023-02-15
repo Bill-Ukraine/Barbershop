@@ -14,25 +14,72 @@ body {
   color: var(--color-first);
   background-color: var(--color-fourth);
 }
-li {
+ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about,
+.prices,
+.advantages,
+.masters,
+.portfolio,
+.contacts {
+  padding: 130px 0;
 }
 
 /* Header */
 
 .header {
-  background-color: var(--color-seventh);
+  background-color: var(--color-sixth);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 70px;
+}
+
+.header-list-link {
+  display: flex;
+}
+
+.header-icon {
+  width: 68px;
+  height: 55px;
+  fill: var(--color-fourth);
 }
 
 .header-link,
 .address-link {
   font-family: inherit;
   font-weight: 600;
+  font-style: normal;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
   text-decoration: none;
   color: var(--color-fourth);
+  padding: 40px 20px;
+  display: block;
 }
 
 .header-link:hover,
@@ -54,6 +101,7 @@ li {
   cursor: pointer;
   color: var(--color-fourth);
   background: none;
+  padding: 12px 20px;
 }
 
 .header-button:hover,
@@ -66,7 +114,12 @@ li {
 /* Section Hero */
 
 .section-hero {
+  padding-top: 184px;
+  padding-bottom: 206px;
   background-color: var(--color-seventh);
+  background-image: url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .social-network {
@@ -83,6 +136,10 @@ li {
   color: var(--color-fifth);
 }
 
+.hero-content {
+  margin-left: 215px;
+}
+
 .hero-pretext {
   font-weight: 600;
   font-size: 11px;
@@ -90,6 +147,7 @@ li {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-third);
+  margin: 0 0 20px;
 }
 
 .hero-title {
@@ -99,6 +157,7 @@ li {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--color-fourth);
+  margin: 0 0 20px;
 }
 
 .hero-text {
@@ -106,6 +165,8 @@ li {
   line-height: 1.66;
   letter-spacing: 0.02em;
   color: var(--color-second);
+  margin: 0;
+  max-width: 486px;
 }
 
 .hero-slider {
@@ -120,7 +181,21 @@ li {
   cursor: pointer;
 }
 
-/* Section 2 */
+/* Section About*/
+
+.about-images {
+  display: flex;
+  gap: 30px;
+}
+
+.about-content {
+  padding-left: 64px;
+  padding-right: 50px;
+}
+
+.about-container {
+  display: flex;
+}
 
 .about-title {
   font-weight: 600;
@@ -128,6 +203,7 @@ li {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin: 0 0 20px;
 }
 
 .about-text {
@@ -136,6 +212,7 @@ li {
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
+  margin: 0 0 20px;
 }
 
 .about-hero-text {
@@ -144,6 +221,7 @@ li {
   line-height: 1.66;
   letter-spacing: 0.02em;
   color: var(--color-sixth);
+  margin: 0 0 20px;
 }
 
 .about-tagline {
@@ -151,6 +229,7 @@ li {
   line-height: 1.85;
   letter-spacing: 0.02em;
   color: var(--color-sixth);
+  margin: 0 0 40px;
 }
 
 .about-button {
@@ -163,14 +242,48 @@ li {
   border-radius: 25px;
   background: none;
   cursor: pointer;
+  padding: 12px 20px;
 }
 
 .about-button:hover,
 .about-button:focus {
+  color: var(--color-fourth);
   background-color: var(--color-fifth);
 }
 
 /*Section Prices */
+
+.prices {
+  background-color: rgb(48, 13, 6);
+}
+
+.prices-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.prices-item {
+  flex-basis: calc(100% / 2);
+  padding: 20px 40px;
+}
+
+.prices-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prices-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--color-fourth);
+  margin: 0 0 44px;
+}
 
 .prices-text {
   font-weight: 600;
@@ -179,4 +292,246 @@ li {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-seventh);
+  margin: 0 0 20px 35px;
+}
+
+.prices-content-title,
+.price-content-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: var(--color-second);
+  margin: 0;
+}
+
+.prices-button {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Section Advantages */
+
+.advantages-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 130px;
+  padding: 0 115px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.advantages-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.advantages-item-container {
+  padding: 20px 24px;
+  background-color: var(--color-seventh);
+  margin: 0;
+  align-items: center;
+}
+
+.advantages-numbers {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin: 0 0 6px;
+}
+
+.advantages-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130px;
+  display: block;
+}
+
+.advantages-number-sup {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  color: var(--color-fifth);
+}
+
+.advantages-tag-line {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.advantages-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.advantages-text {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: var(--color-sixth);
+}
+
+/* Section Masters */
+
+.masters {
+  background-color: var(--color-seventh);
+}
+
+.masters-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.masters-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.masters-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.masters-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.masters-name {
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin: 0 0 8px;
+}
+
+.masters-name-text {
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-fifth);
+  margin: 0 0 30px;
+}
+
+.masters-svg-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.masters-images {
+  margin: 0 0 30px;
+}
+
+.masters-icon-item {
+  background-color: var(--color-fourth);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+/* .masters-icon-item:hover {
+  fill:var(--color-fifth);
+} */
+
+.masters-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.masters-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-first);
+} 
+
+.masters-icon-item:hover .masters-icon {
+  fill:var(--color-fifth);
+}
+
+/* Section Portfolio */
+
+.portfolio-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 44px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+/* Section Footer */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 73px;
+  padding-right: 35px;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-network {
+  display: block;
+  padding: 56px 20px;
+}
+
+.footer-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--color-second);
 }
