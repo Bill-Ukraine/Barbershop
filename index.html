@@ -22,11 +22,12 @@
 
     <header class="header">
       <div class="container header-container">
+        <div class="hero-header"></div>
         <nav class="header-nav">
           <a class="header-logo" href="./index.html">
-           <svg class="header-icon">
-            <use href="./images/icon.svg#icon-Logo"></use>
-           </svg>  
+            <svg class="header-icon">
+              <use href="./images/icon.svg#icon-Logo"></use>
+            </svg>
           </a>
           <ul class="header-list-link">
             <li><a class="header-link" href="">Про нас</a></li>
@@ -45,18 +46,18 @@
       <!-- Секція Герой -->
 
       <section class="section-hero">
-        <div class="container">
-          <ul>
+        <div class="container hero-container">
+          <ul class="hero-social-list">
             <li>
               <a
-                class="social-network"
+                class="hero-social-network"
                 href="https://www.instagram.com
-                      "
+                          "
                 >Instagram</a
               >
             </li>
             <li>
-              <a class="social-network" href="https://www.youtube.com"
+              <a class="hero-social-network" href="https://www.youtube.com"
                 >Youtube</a
               >
             </li>
@@ -70,9 +71,15 @@
             </p>
           </div>
 
-          <ul>
-            <li><button class="hero-slider" type="button">Назад</button></li>
-            <li><button class="hero-slider" type="button">Вперед</button></li>
+          <ul class="hero-slider-list">
+            <li class="hero-slider-item">
+              <button class="hero-slider hero-back" type="button">Назад</button>
+            </li>
+            <li class="hero-slider-item">
+              <button class="hero-slider hero-next" type="button">
+                Вперед
+              </button>
+            </li>
           </ul>
         </div>
       </section>
@@ -174,34 +181,26 @@
         <div class="container advantages-container">
           <ul class="advantages-list">
             <li class="advantages-item">
-              <div class="advantages-item-container">
-                <p class="advantages-numbers">
-                  600<sup class="advantages-number-sup">+</sup>
-                </p>
+              <div class="advantages-item-container advantages-top-left">
+                <p class="advantages-numbers">600</p>
                 <p class="advantages-item-text">Задоволених клієнтів на день</p>
               </div>
             </li>
             <li class="advantages-item">
-              <div class="advantages-item-container">
-                <p class="advantages-numbers">
-                  50<sup class="advantages-number-sup">+</sup>
-                </p>
+              <div class="advantages-item-container advantages-top-right">
+                <p class="advantages-numbers">50</p>
                 <p class="advantages-item-text">Нагород за відмінний сервіс</p>
               </div>
             </li>
             <li class="advantages-item">
-              <div class="advantages-item-container">
-                <p class="advantages-numbers">
-                  20<sup class="advantages-number-sup">+</sup>
-                </p>
+              <div class="advantages-item-container advantages-bottom-left">
+                <p class="advantages-numbers">20</p>
                 <p class="advantages-item-text">Найкращих майстрів міста</p>
               </div>
             </li>
             <li class="advantages-item">
-              <div class="advantages-item-container">
-                <p class="advantages-numbers">
-                  100<sup class="advantages-number-sup">+</sup>
-                </p>
+              <div class="advantages-item-container advantages-bottom-right">
+                <p class="advantages-numbers">100</p>
                 <p class="advantages-item-text">Подарунок постійним клієнтам</p>
               </div>
             </li>
@@ -379,10 +378,10 @@
       <!-- Секція Контакти -->
 
       <section class="contacts">
-        <div class="container">
-          <section>
-            <h2>Онлайн-запис</h2>
-            <form action="">
+        <div class="container contacts-container">
+          <div class="contacts-container-form">
+            <p class="contacts-tagline">Онлайн-запис</p>
+            <!-- <form action="">
               Ім’я*
               <input type="text" name="firstname" />
               Телефон*
@@ -390,39 +389,71 @@
               Повідомлення<br />
               <input type="text" /><br />
               <input type="submit" value="Відправити" />
-            </form>
-          </section>
-          <section>
-            <h2>Контакти</h2>
-            <address>
+            </form> -->
+          </div>
+          <div class="contacts-container-address">
+            <h2 class="contacts-title">Контакти</h2>
+            <address class="contacts-address">
               <ul>
-                <li><p>ул. Васильківська, 7А Київ, 08132</p></li>
-                <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-                <li>
-                  <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+                <li class="contacts-address-item">
+                  <a class="contacts-address-link" href="">
+                    <svg class="contacts-icon contacts-icon-map">
+                      <use
+                        href="./images/icon.svg#icon-map-pin"
+                        width="24"
+                        height="24"
+                      ></use>
+                    </svg>
+                    <p class="contacts-address-text">ул. Васильківська, 7А Київ, 08132</p>
+                  </a>
+                </li>
+                <li class="contacts-address-item">
+                  <a class="contacts-address-link" href="tel:+380441111111">
+                    <svg class="contacts-icon">
+                      <use
+                        href="./images/icon.svg#icon-phone"
+                        width="24"
+                        height="24"
+                      ></use>
+                    </svg>
+                    +38 044 111 11 11
+                  </a>
+                </li>
+                <li class="contacts-address-item">
+                  <a
+                    class="contacts-address-link"
+                    href="mailto:barbershop@email.com"
+                  >
+                    <svg class="contacts-icon">
+                      <use
+                        href="./images/icon.svg#icon-mail"
+                        width="24"
+                        height="24"
+                      ></use></svg>barbershop@email.com
+                  </a>
                 </li>
               </ul>
             </address>
-            <p>Графік роботи</p>
-            <p>Щоденно з 9:00 до 22:00</p>
-          </section>
+            <p class="contacts-text">Графік роботи</p>
+            <p class="contacts-text-time">Щоденно з 9:00 до 22:00</p>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container footer-container">
-        <p class="footer-text">&COPY;Copyright 2023</p>
+        <p class="footer-text">Copyright 2023</p>
         <ul class="footer-list">
           <li>
             <a
-              class="social-network"
+              class="footer-social-network footer-instagram"
               href="https://www.instagram.com
                   "
               >Instagram</a
             >
           </li>
           <li>
-            <a class="social-network" href="https://www.youtube.com">Youtube</a>
+            <a class="footer-social-network" href="https://www.youtube.com">Youtube</a>
           </li>
         </ul>
       </div>
